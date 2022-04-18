@@ -7,7 +7,10 @@ docker-compose up -d
 # get name brocker
 docker-compose ps
 
-# access container broker
+#access container broker windows
+docker exec -it a3lab-intro-kafka-kafka-1_1 bash
+
+# access container broker linux
 CONTAINER_NAME=a3lab-intro-kafka-kafka-1-1
 docker exec -it $CONTAINER_NAME bash
 
